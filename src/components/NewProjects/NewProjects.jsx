@@ -1,12 +1,11 @@
 import React from "react";
 import "./NewProjects.scss";
-import homeProjects from "../../data/homeRenovationProjects.json";
 import basement from '../../assets/images/basement.jpg'
 import bathroom from '../../assets/images/bathroom.jpg'
 import bedroom from '../../assets/images/bedroom.jpg'
 import kitchen from '../../assets/images/kitchen.jpg'
 import livingroom from '../../assets/images/livingroom.jpg'
-import HoverCarousel from 'hover-carousel'
+
 
 function NewProjects() {
 

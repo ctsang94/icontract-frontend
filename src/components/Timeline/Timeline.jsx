@@ -16,7 +16,7 @@ export default function BasicTimeline() {
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot>
-            <KitchenIcon />
+            <KitchenIcon fontSize='large'/>
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -25,7 +25,7 @@ export default function BasicTimeline() {
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot>
-            <FoundationOutlinedIcon />
+            <FoundationOutlinedIcon fontSize='large'/>
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -33,8 +33,8 @@ export default function BasicTimeline() {
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineDot>
-            <BathtubOutlinedIcon />
+          <TimelineDot > 
+            <BathtubOutlinedIcon fontSize='large'/>
           </TimelineDot>
         </TimelineSeparator>
         <TimelineContent className='timeline__text'>2020 - 2021 Bathroom Remodeling</TimelineContent>

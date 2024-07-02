@@ -18,22 +18,11 @@
   }
 
   &__icon {
-    position: relative;
-    width: 16px;
+    display: flex;
+    align-items: center;
+    width: 24px;
     height: 16px;
 
-    &-background {
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      background: $primary-color;
-    }
-
-    &-foreground {
-      position: absolute;
-      width: 12px;
-      height: 13px;
-    }
   }
 
   &__title {
@@ -48,7 +37,7 @@
   &__right {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 26px;
     flex: 1;
     height: 40px;
     justify-content: flex-end;
@@ -59,13 +48,13 @@
     }
 
 
-    &__profile-pic {
-      width: 40px;
-      height: 40px;
-      border-radius: 20px;
-    }
+   
   }
-  
+  &__profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
   &__links{
     display: flex;
     justify-content: center;

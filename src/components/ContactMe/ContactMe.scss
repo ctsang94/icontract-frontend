@@ -10,12 +10,14 @@
     }
     &__container{
         display:flex;
+        align-items: center;
         @include h3();
     }
 
     &__details{
         display:flex;
         flex-direction: column;
+        padding-left: 2rem;
         
     }
 }

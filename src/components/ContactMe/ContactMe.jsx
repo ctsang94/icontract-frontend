@@ -10,7 +10,7 @@ function ContactMe() {
     <section className='contactme'>
         <h2 className='contactme__title'>Contact Info</h2>
         <article className='contactme__container'>
-            <EmailOutlinedIcon />
+            <EmailOutlinedIcon fontSize='large'/>
             <div className='contactme__details'>
                 <h3>Email</h3>
                 <p>555-555-5555</p>
@@ -18,14 +18,14 @@ function ContactMe() {
             </div>
         </article>
         <article className='contactme__container'>
-            <HomeOutlinedIcon />
+            <HomeOutlinedIcon fontSize='large'/>
             <div className='contactme__details'>
                 <h3>Address</h3>
                 <p>123 main st, springfield, IL, 21111</p>
             </div>
         </article>
         <article className='contactme__container'>
-            <VerifiedUserOutlinedIcon />
+            <VerifiedUserOutlinedIcon fontSize='large'/>
             <div className='contactme__details'>
                 <h3>License</h3>
                 <p>Licensed General Contractor</p>
