@@ -4,7 +4,10 @@
     @include h2();
     padding-top: 2rem;
     padding-left: 6rem;
-   
+
+    &__title{
+        padding-bottom: 2rem;
+    }
 
     &__list{
         display: flex;
@@ -14,7 +17,11 @@
     &__item{
         padding-right: 1rem;
 
+        &:hover {
+            transform: scale(1.05);
+          }
         &-image{
+            border-radius: 30px;
             width: 250px;
             height:200px;
         }
