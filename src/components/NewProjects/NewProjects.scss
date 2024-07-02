@@ -1,0 +1,19 @@
+.new-projects{
+    padding-top: 2rem;
+    padding-left: 6rem;
+   
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    &__item{
+        padding-right: 1rem;
+
+        &-image{
+            width: 250px;
+            height:200px;
+        }
+    }
+}
