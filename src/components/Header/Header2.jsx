@@ -10,7 +10,7 @@ const Header2 = () => {
                     <div className="header__icon-background"></div>
                     <div className="header__icon-foreground"></div>
                 </div>
-                <div className="header__title">Homemade</div>
+                <div className="header__title">i-Contract</div>
             </div>
             <div className="header__right">
                 <div className="header__links">
