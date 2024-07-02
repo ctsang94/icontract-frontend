@@ -1,0 +1,26 @@
+@use '../styles/variables.scss' as *;
+
+.contractor{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    &__image{
+        width: 100px;
+        height: 100px;
+        border-radius: 9999px;
+    }
+    &__title{
+
+    }
+
+    &__review{
+
+    }
+
+    &__buttons{
+        display:flex;
+        gap:1rem;
+    }
+}
