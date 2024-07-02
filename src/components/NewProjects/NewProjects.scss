@@ -1,4 +1,7 @@
+@use '../styles/mixins.scss' as *;
+
 .new-projects{
+    @include h2();
     padding-top: 2rem;
     padding-left: 6rem;
    

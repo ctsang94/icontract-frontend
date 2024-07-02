@@ -1,0 +1,21 @@
+@use '../styles/mixins.scss' as *;
+
+.contactme{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 6rem;
+
+    &__title{
+        @include h2();
+    }
+    &__container{
+        display:flex;
+        @include h3();
+    }
+
+    &__details{
+        display:flex;
+        flex-direction: column;
+        
+    }
+}

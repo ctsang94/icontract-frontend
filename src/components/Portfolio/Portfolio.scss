@@ -1,0 +1,17 @@
+@use '../styles/mixins.scss' as *;
+
+.portfolio{
+    @include h2();
+    padding: 1rem 6rem;
+    &__images{
+        padding-top: 2rem;
+        display:flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    &__image{
+        width:200px;
+        height:200px;
+    }
+}

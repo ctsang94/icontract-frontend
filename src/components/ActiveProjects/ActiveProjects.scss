@@ -1,6 +1,8 @@
-@use '../styles/variables.scss';
+@use '../styles/variables.scss' as *;
+@use '../styles/mixins.scss' as *;
 
 .active-projects{
+    @include h2();
     padding-top: 2rem;
     padding-left: 6rem;
     &__header{
