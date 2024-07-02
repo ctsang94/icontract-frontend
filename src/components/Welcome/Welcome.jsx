@@ -1,11 +1,12 @@
 import { Button } from "@mui/material";
+import './Welcome.scss'
 
 const Welcome = () => {
   return (
-    <>
-      <h1>Welcome back, Tracey</h1>
-      <Button variant="contained">Update your profile</Button>
-    </>
+    <section className='container'>
+      <h1 className='container__title'>Welcome back, Tracey</h1>
+      <Button variant="contained" className='container__button'>Update your profile</Button>
+    </section>
   );
 };
 
