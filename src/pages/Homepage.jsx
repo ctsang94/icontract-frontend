@@ -1,6 +1,7 @@
 import Welcome from "../components/Welcome/Welcome";
 import ActiveProjects from "../components/ActiveProjects/ActiveProjects";
 import NewProjects from "../components/NewProjects/NewProjects";
+import Chat from "../components/Chat/Chat";
 
 const Homepage = () =>{
     return (
@@ -8,6 +9,7 @@ const Homepage = () =>{
             <Welcome />
             <ActiveProjects />
             <NewProjects />
+            <Chat />
         </>
     )
 }
