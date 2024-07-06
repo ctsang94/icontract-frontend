@@ -41,13 +41,12 @@
     flex: 1;
     height: 40px;
     justify-content: flex-end;
+    font-size: 16px;
 
 
     &__link {
       font-weight: $font-weight-normal;
     }
-
-
    
   }
   &__profile-pic {
