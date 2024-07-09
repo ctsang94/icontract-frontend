@@ -1,14 +1,13 @@
 @use "../styles/mixins.scss" as *;
 
 .form {
+    position: relative;
     background-color: #fefefe;
-    margin: 10% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    border-radius: 2rem;
-    width: 70%; /* Could be more or less, depending on screen size */
+    width: 100%; /* Could be more or less, depending on screen size */
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
+    padding-left: 2rem;
   &__title {
     @include h1();
     font-weight: 700;
@@ -28,7 +27,7 @@
     width: 70%;
     height: 2rem;
     border-radius: 10px;
-    background-color: beige;
+    background-color: gainsboro;
     }
     &__input::placeholder{
         padding-left: .5rem;

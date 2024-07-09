@@ -12,11 +12,11 @@ import {Box} from "@mui/material";
 
 const style = {
   position: 'absolute',
-  top: '25%',
+  top: '55%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 800,
-  height: 600,
+  width: '50rem',
+  height: '50rem',
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -50,7 +50,7 @@ function NewProjects() {
         aria-describedby="modal-description"
       >
         <Box className="modal-box" sx={style}>
-          <Form />
+          <Form handleClose={handleClose}/>
         </Box>
       </Modal>
     </main>

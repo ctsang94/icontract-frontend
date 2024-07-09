@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import { useState } from "react";
 import axios from "axios";
 
-function Form() {
+function Form({open, handleClose}) {
   const [projectType, setProjectType] = useState('');
   const [projectDescription, setProjectDescription] = useState('');
   const [projectEstimatedBudget, setProjectEstimatedBudget] = useState('');
@@ -57,6 +57,7 @@ function Form() {
           value={projectStartDate}
           onChange={(e) => setProjectStartDate(e.target.value)} placeholder="Select date"></input>
         <Button type='submit'>Add Project</Button>
+        <Button onClick={handleClose} sx={{ mr: 2 }}>Cancel</Button>
       </form>
     </main>
   );
