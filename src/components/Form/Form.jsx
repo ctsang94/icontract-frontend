@@ -41,19 +41,23 @@ function Form({open, handleClose}) {
       <form className='form__container' onSubmit={handleSubmit}>
         <label className='form__label'>Project type</label>
         <input className='form__input'
+          required
           value={projectType}
           onChange={(e) => setProjectType(e.target.value)} type='text' placeholder="What's the purpose of this project?"></input>
         <label className='form__label'>Project description</label>
         <textarea className='form__input form__input-desc'
+          required
           value={projectDescription}
           onChange={(e) => setProjectDescription(e.target.value)} type='text' placeholder="What are you looking to accomplish?" />
         <label className='form__label'>Estimated budget</label>
         <input className='form__input'
-          type="number"
+         required
+         type="number"
           value={projectEstimatedBudget}
           onChange={(e) => setProjectEstimatedBudget(e.target.value)} placeholder="$50,000"></input>
         <label className='form__label'>Preferred start date</label>
         <input className='form__input' type='text'
+          required
           value={projectStartDate}
           onChange={(e) => setProjectStartDate(e.target.value)} placeholder="Select date"></input>
         <Button type='submit'>Add Project</Button>
