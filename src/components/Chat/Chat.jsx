@@ -3,7 +3,7 @@ import { Button } from '@mui/material';
 import { io } from 'socket.io-client';
 import './Chat.scss';
 
-const socket = io('http://localhost:8080'); // Correct URL
+const socket = io('https://icontract-backend.onrender.com'); // Correct URL
 
 function Chat() {
   const [userName, setUserName] = useState('');
