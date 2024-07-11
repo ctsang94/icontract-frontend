@@ -5,6 +5,18 @@
     @include h2();
     padding-top: 2rem;
     padding-left: 6rem;
+
+
+    &__details{
+        &-title{
+            @include h2();
+            font-size: 1.5rem;
+            color: black;
+        }
+        &-progress{
+            color: black;
+        }
+    }
     &__header{
         padding-bottom: 2rem;
     }

@@ -7,6 +7,7 @@ import Homepage from './pages/Homepage'
 import Contractorpage from './pages/Contractorpage'
 import Landingpage from './pages/Landingpage'
 import Aboutmepage from './pages/Aboutmepage'
+import Projectsauctionpage from './pages/Projectsauctionpage'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/homeowner' element={<Homepage />} />
           <Route path='/aboutme' element={<Aboutmepage />} />
           <Route path='/contractor' element={<Contractorpage />} />
+          <Route path='/auctions' element={<Projectsauctionpage />} />
         </Routes>
       </BrowserRouter>
     </main>

@@ -1,0 +1,85 @@
+@use '../styles/mixins.scss' as *;
+
+.projectauction-container {
+    padding: 6rem;
+
+    &__top {
+        width: 100%;
+        padding-bottom: 2rem;
+
+        &-title {
+            @include h1();
+            font-size: 2rem;
+        }
+
+        &-text {
+            @include h2();
+            color: #4A709C;
+        }
+
+        &-input {
+            width: 70%;
+            height: 2rem;
+            border-radius: 2rem;
+            color: #4A709C;
+            background: 1% #cee1f7;
+        }
+
+        ::placeholder {
+            color: #4A709C;
+            padding-left: 1rem;
+        }
+    }
+
+    &__bot {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: start;
+            border-radius: 25px;
+            border: .25px solid lightslategray;
+            margin-bottom: 1rem;
+            border-style: none;
+            &:hover {
+                transform: scale(1.05);
+              }
+        }
+
+        &-left {
+            width: 70%;
+        }
+
+        &-right {}
+
+        &-title {
+            @include h2();
+            font-size: 1.5rem;
+        }
+
+        &-text {
+            @include h3();
+        }
+
+        &-button {
+            @include h3();
+            color: black;
+            background-color: #E8FDFF;
+        }
+
+        &-img {
+            border-radius: 2rem;
+        
+        }
+    }
+
+}

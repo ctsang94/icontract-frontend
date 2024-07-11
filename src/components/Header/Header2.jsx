@@ -17,6 +17,7 @@ const Header2 = () => {
       </section></Link>
       <nav className="header__right">
         <div className="header__links">
+          <Link to='/auctions' className="header__link">Auctions</Link>
           <Link to='/homeowner' className="header__link">My Projects</Link>
           <Link to='/contractor' className="header__link">Contractors</Link>
           {/* <Link to='/' className="header__link">Help</Link> */}
