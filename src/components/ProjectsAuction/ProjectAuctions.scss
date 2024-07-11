@@ -1,7 +1,7 @@
 @use '../styles/mixins.scss' as *;
 
 .projectauction-container {
-    padding: 6rem;
+    padding: 5rem;
 
     &__top {
         width: 100%;
@@ -14,7 +14,7 @@
 
         &-text {
             @include h2();
-            color: #4A709C;
+            color: #55c2da;
         }
 
         &-input {
@@ -22,7 +22,7 @@
             height: 2rem;
             border-radius: 2rem;
             color: #4A709C;
-            background: 1% #cee1f7;
+          
         }
 
         ::placeholder {
@@ -72,8 +72,8 @@
 
         &-button {
             @include h3();
-            color: black;
-            background-color: #E8FDFF;
+            color: white;
+            background-color:#55c2da;
         }
 
         &-img {
