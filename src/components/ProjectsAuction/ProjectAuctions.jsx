@@ -7,7 +7,7 @@ function ProjectAuctions() {
 
     const getProjects = async () => {
         try {
-            const response = await axios.get('http://localhost:5050/projects');
+            const response = await axios.get('https://icontract-backend.onrender.com/projects');
             setProjects(response.data);
         } catch (error) {
             console.error('Error fetching contractors:', error);
