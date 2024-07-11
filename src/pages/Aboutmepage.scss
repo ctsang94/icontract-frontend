@@ -1,0 +1,13 @@
+@use '../components/styles/mixins.scss' as *;
+
+.contractor__top{
+    display: flex;
+    padding-left:6rem;
+}
+
+.contractor__mid{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+}

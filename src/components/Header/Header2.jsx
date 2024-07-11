@@ -24,7 +24,7 @@ const Header2 = () => {
         {/* <Button variant="contained" className="header__button">
           <span className="header__button-text">Post a project</span>
         </Button> */}
-        <img className="header__profile-pic" src={image} alt="Profile" />
+        <Link to='/aboutme'><img className="header__profile-pic" src={image} alt="Profile" /></Link>
       </nav>
     </header>
   );
