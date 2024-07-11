@@ -13,8 +13,8 @@ function Landing() {
         <h1 className='landing__title'>iContract</h1>
         <p className='landing__text'>The most trusted platform on home renovation</p>
         <div className="landing__buttons">
-            <Link to='/homeowner'><Button color='inherit' variant='outlined' className='landing__button'>Homeowner</Button></Link>
-            <Link to='/contractor'><Button variant='outlined' className='landing__button'>Contractor</Button></Link>
+            <Link to='/homeowner'><button className='landing__button'>Homeowner</button></Link>
+            <Link to='/contractor'><button className='landing__button'>Contractor</button></Link>
         </div>
       </main>
     </>

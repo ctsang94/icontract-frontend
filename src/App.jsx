@@ -9,7 +9,7 @@ import Landingpage from './pages/Landingpage'
 
 function App() {
   return (
-    <>
+    <main className='main'>
       <BrowserRouter>
         <HeaderWrapper />
         <Routes>
@@ -18,7 +18,7 @@ function App() {
           <Route path='/contractor' element={<Contractorpage />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </main>
   )
 }
 
