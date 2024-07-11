@@ -14,7 +14,7 @@ function Contractorpage() {
 
   const getContractors = async () => {
     try {
-      const response = await axios.get('http://localhost:5050/contractors');
+      const response = await axios.get('https://icontract-backend.onrender.com/contractors');
       setContractors(response.data);
     } catch (error) {
       console.error('Error fetching contractors:', error);
