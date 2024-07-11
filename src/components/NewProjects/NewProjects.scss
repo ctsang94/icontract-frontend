@@ -16,7 +16,7 @@
         
     }
     &__item{
-        @include h3();
+        @include h2();
         padding-right: 1rem;
         display: flex;
         flex-direction: column;
