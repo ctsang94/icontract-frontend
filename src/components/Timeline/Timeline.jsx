@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineItem, { timelineItemClasses } from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
@@ -12,7 +12,16 @@ import './Timeline.scss';
 
 export default function BasicTimeline() {
   return (
-    <Timeline>
+    <div>
+    <Timeline
+    sx={{
+      [`& .${timelineItemClasses.root}:before`]: {
+        flex: 0,
+        padding: 0,
+        
+      },
+    }}
+  >
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot>
@@ -40,5 +49,6 @@ export default function BasicTimeline() {
         <TimelineContent className='timeline__text'>2020 - 2021 Bathroom Remodeling</TimelineContent>
       </TimelineItem>
     </Timeline>
+    </div>
   );
 }

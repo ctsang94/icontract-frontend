@@ -1,8 +1,14 @@
 @use '../styles/mixins.scss' as *;
 
 .portfolio{
-    @include h2();
+   
     padding: 1rem 6rem;
+
+    &__title{
+        display: flex;
+        justify-content: center;
+        @include h1();
+    }
     &__images{
         padding-top: 2rem;
         display:flex;

@@ -7,13 +7,13 @@ import VerifiedUserOutlinedIcon from '@mui/icons-material/VerifiedUserOutlined';
 
 function ContactMe() {
   return (
+<>
+    <h2 className='contactme__title'>Contact Info</h2>
     <section className='contactme'>
-        <h2 className='contactme__title'>Contact Info</h2>
         <article className='contactme__container'>
             <EmailOutlinedIcon fontSize='large'/>
             <div className='contactme__details'>
                 <h3>Email</h3>
-                <p>555-555-5555</p>
                 <p>kelvintsang@gmail.com</p>
             </div>
         </article>
@@ -32,6 +32,7 @@ function ContactMe() {
             </div>
         </article>
     </section>
+    </>
   )
 }
 

@@ -8,14 +8,14 @@ function Portfolio() {
   
 
   return (
-    <section className='portfolio'>
-      <h2 className='portfolio__title'>Portfolio</h2>
-      <article className='portfolio__images'>
-        <Carousel />
-      </article>
+    
+    
+      <section className='portfolio'>
+        <article className='portfolio__images'>
+          <Carousel />
+        </article>
 
-    </section>
-
+      </section>
   )
 }
 
