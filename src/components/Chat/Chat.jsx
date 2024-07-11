@@ -44,12 +44,13 @@ function Chat() {
       {!joined ? (
         <div className='join-container'>
           <input
+            className='input-container'
             type='text'
             placeholder='Enter your name'
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
           />
-          <Button onClick={handleJoin}>Join Chat</Button>
+          <button className='join-button' onClick={handleJoin}>Join Chat</button>
         </div>
       ) : (
         <div className='chat-container'>

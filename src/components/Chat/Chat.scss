@@ -3,10 +3,12 @@
 // Chat.scss
 
 .chatbox-container {
+  
     position: fixed;
     bottom: 20px; /* Adjust this value as needed */
     right: 20px;  /* Adjust this value as needed */
-    width: 300px; /* Adjust width as needed */
+    width: 12rem; /* Adjust width as needed */
+    height: 8rem;
     max-height: 400px; /* Adjust height as needed */
     background-color: white;
     border: 1px solid #ccc;
@@ -15,6 +17,32 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+
+    .join-container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding-top: 1.75rem;
+     padding-right: 1.5rem;
+     padding-bottom: 1rem;
+      .input-container{
+        margin-bottom: 1rem;
+        border-color: lightblue;
+        border-radius: 1rem;
+       
+      }
+      ::placeholder{
+        @include h3();
+        padding-left: .5rem;
+      }
+     .join-button{
+      @include h3();
+      color: lightblue;
+      background-color: gray ;
+    }
+    }
+   
   }
   
   .chat-container {
@@ -39,6 +67,7 @@
   }
   
   .user-message {
+    @include h2();
     flex: 1;
     padding: 8px;
     border: 1px solid #ccc;
