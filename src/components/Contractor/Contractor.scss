@@ -23,6 +23,7 @@
 
     &__review{
         padding-top: 1rem;
+        @include h3();
     }
 
     &__buttons{

@@ -11,4 +11,7 @@
     &__title {
         padding-bottom: 2rem;
     }
+    &__text{
+        @include h3();
+    }
 }

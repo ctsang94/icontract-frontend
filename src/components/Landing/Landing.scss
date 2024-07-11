@@ -28,8 +28,9 @@
     color: black;
 }
 &__button{
-    color: lightblue;
-    background-color: gray ;
+    @include h3();
+    color: black;
+    background-color:#E8FDFF;
 }
 }
 

@@ -3,7 +3,7 @@
 .container{
     display: flex;
     flex-direction: column;
-
+    padding-top: 1rem;
     h1{
         @include h1();
         text-align: center;
@@ -31,5 +31,9 @@
         width: 25rem;
         height: 25rem;
         border-radius: 30px;
+    }
+
+    &__review{
+        @include h3();
     }
 }
