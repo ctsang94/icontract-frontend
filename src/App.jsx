@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import Contractorpage from './pages/Contractorpage'
 import Landingpage from './pages/Landingpage'
+import Projectpage from './components/Project/Projectpage'
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <BrowserRouter>
         <HeaderWrapper />
         <Routes>
-          <Route path='/' element={<Landingpage />} />
+          {/* <Route path='/' element={<Landingpage />} />
           <Route path='/homeowner' element={<Homepage />} />
-          <Route path='/contractor' element={<Contractorpage />} />
+          <Route path='/contractor' element={<Contractorpage />} /> */}
+          <Route path='/' element={<Projectpage />} /> 
         </Routes>
       </BrowserRouter>
     </>
