@@ -1,0 +1,92 @@
+@use '../styles/mixins.scss' as *;
+
+// Chat.scss
+
+.chatbox-container {
+    position: fixed;
+    bottom: 20px; /* Adjust this value as needed */
+    right: 20px;  /* Adjust this value as needed */
+    width: 300px;  /* Adjust width as needed */
+    max-height: 400px; /* Adjust height as needed */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    .join-container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding-top: 1.75rem;
+     padding-right: 1.5rem;
+     padding-bottom: 1rem;
+      .input-container{
+        margin-bottom: 1rem;
+        border-color: lightblue;
+        border-radius: 1rem;
+       
+      }
+      ::placeholder{
+        @include h3();
+        padding-left: .5rem;
+      }
+     .join-button{
+      @include h3();
+      color: lightblue;
+      background-color: gray ;
+    }
+    }
+   
+  }
+  
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .messages {
+    flex: 1;
+    padding-top: 1rem;
+    overflow-y: auto;
+    list-style: none;
+    margin:0;
+    padding-left: 1.5rem;
+    @include h2();
+  }
+  
+  .form {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .user-message {
+    @include h2();
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  button {
+    color: black;
+    background-color:#E8FDFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .join-container{
+    padding-left:2rem;
+  }

@@ -1,0 +1,39 @@
+@use '../components/styles/mixins.scss' as *;
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    h1{
+        @include h1();
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+}
+.contractors{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    @include h2();
+
+    &__card{
+        width: 30%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__image{
+        width: 25rem;
+        height: 25rem;
+        border-radius: 30px;
+    }
+
+    &__review{
+        @include h3();
+    }
+}

@@ -1,0 +1,33 @@
+@use '../styles/variables.scss' as *;
+@use '../styles/mixins.scss' as *;
+
+.contractor{
+    @include h2();
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    text-align: center;
+    width: 25%;
+   
+   
+    &__image{
+        width: 150px;
+        height: 150px;
+        border-radius: 9999px;
+    }
+    &__title{
+        padding-top:1rem;
+    }
+
+    &__review{
+        padding-top: 1rem;
+        @include h3();
+    }
+
+    &__buttons{
+        display:flex;
+        gap:1rem;
+    }
+}

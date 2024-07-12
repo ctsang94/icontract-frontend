@@ -1,0 +1,33 @@
+@use '../styles/mixins.scss' as *;
+
+.contactme{
+    width: 100%;
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    &__title{
+        
+        display: flex;
+        justify-content: center;
+        @include h1();
+    }
+    &__container{
+        width:33%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        @include h2();
+    }
+
+    &__details{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        @include h3();
+        
+    }
+}

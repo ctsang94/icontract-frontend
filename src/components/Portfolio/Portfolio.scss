@@ -1,0 +1,24 @@
+@use '../styles/mixins.scss' as *;
+
+.portfolio{
+   
+    padding: 1rem 6rem;
+
+    &__title{
+        display: flex;
+        justify-content: center;
+        @include h1();
+    }
+    &__images{
+        padding-top: 2rem;
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    &__image{
+        width:200px;
+        height:200px;
+    }
+}

@@ -1,0 +1,10 @@
+@use '../styles/mixins.scss' as *;
+
+.welcome__container{
+    @include h1();
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 6rem;
+    padding-left: 6rem;
+}

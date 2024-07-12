@@ -1,0 +1,26 @@
+@use './typography.scss' as *;
+
+@mixin h1{
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+
+}
+
+@mixin h2{
+    font-family: 'Inter';
+    font-size: 1rem;
+    line-height: 2.25rem;
+    font-weight: 300;
+    color:black;
+    
+}
+
+@mixin h3{
+    font-family: 'Inter';
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 200;
+    color: #55c2da;
+}

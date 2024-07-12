@@ -1,0 +1,36 @@
+@use '../styles/mixins.scss' as *;
+
+.landing{
+    background-image: url('../../assets/images/reno2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+&__title{
+    color:black;  
+    @include h1();
+    font-weight: 700;
+}
+&__text{
+    @include h2();
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+&__buttons{
+    display: flex;
+    gap: 1rem;
+    color: black;
+}
+&__button{
+    @include h3();
+    color: white;
+    background-color:#55c2da;
+}
+}
+
