@@ -8,6 +8,9 @@ import Contractorpage from './pages/Contractorpage'
 import Landingpage from './pages/Landingpage'
 import Aboutmepage from './pages/Aboutmepage'
 import Projectsauctionpage from './pages/Projectsauctionpage'
+import SignIn from './components/Auth/SignIn'
+import SignUp from './components/Auth/SignUp'
+import AuthDetails from './components/Auth/AuthDetails'
 
 function App() {
   return (
@@ -15,7 +18,7 @@ function App() {
       <BrowserRouter>
         <HeaderWrapper />
         <Routes>
-          <Route path='/' element={<Landingpage />} />
+          <Route path='/' element={<><SignIn /> <SignUp/> <AuthDetails/></>} />
           <Route path='/homeowner' element={<Homepage />} />
           <Route path='/aboutme' element={<Aboutmepage />} />
           <Route path='/contractor' element={<Contractorpage />} />
