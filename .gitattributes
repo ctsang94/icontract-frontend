@@ -1,2 +1,2 @@
-*.html linguist-detectable=false
-.react linguist-detectable=true
+*.jsx linguist-language=React
+*.js linguist-language=React
